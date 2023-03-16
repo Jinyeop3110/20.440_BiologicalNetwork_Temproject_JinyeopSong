@@ -22,10 +22,10 @@ Since the original data is heavy(5.4Gb), we saved an processed data by reducing 
 - processed_data : This folder contains the processed data files(RDS format)
 
 # Installation
-- requirements
+- requirements(Program)
 Rstudio(4.2.1)
 
-- R library
+- requirements(R libraries)
 ```
 library(Seurat)
 library(tidyverse)
