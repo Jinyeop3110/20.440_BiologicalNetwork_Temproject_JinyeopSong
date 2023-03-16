@@ -1,7 +1,9 @@
-## 20.440_BiologicalNetwork
-# Identifying a pre-clinical model for predicting neurotoxic side-effects of CD19-directed CAR-T cell therapy
+# 20.440_BiologicalNetwork
+## Identifying a pre-clinical model for predicting neurotoxic side-effects of CD19-directed CAR-T cell therapy
 
-Edited at 2023/Mar/15 by Jinyeop Song
+# Motivation of the project
+Chimeric antigen receptor (CAR)-T cell therapy has shown exceptional clinical outcomes, making it a groundbreaking treatment alternative for cancer. CAR-T cell therapy employs artificially engineered receptors to specifically recognize and eradicate tumor cells by targeting their surface antigens. One of the primary hurdles, however, is the risk of on-target, off-tumor toxicity (OTOT) associated with CAR-T cell therapy. This occurs when CAR-T cells erroneously attack healthy tissues expressing the same antigen as the tumor cells, leading to potentially severe complications. Here, we propose three distinct potential projects that utilize single-cell transcriptomics data to forecast the occurrence of off-tumor toxicity in CAR-T immunotherapies.
+
 
 # Overview
 This repo is to visualize mouse brain transcriptome data by generating various plots, including FeatureScatter, Heatmap, LabelPoint, PCA_cluster, and VlnPlot. 
