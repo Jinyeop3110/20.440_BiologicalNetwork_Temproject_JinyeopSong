@@ -20,12 +20,12 @@ Since the original data is heavy(5.4Gb), we saved an processed data by reducing 
 
 # Installation
 -requirements
-'''
+```
 Rstudio
 library(Seurat)
 library(tidyverse)
 library(here)
-'''
+```
 # Running
 You can simply generate figure by running the following.
 ```
