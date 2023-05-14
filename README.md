@@ -19,7 +19,7 @@ Since the original data is heavy(5.4Gb), we saved an processed data by reducing 
 # Folder structure
 - Figures : This folder contains generated figure. 
 - Data_BBB : This folder contains the processed data files(RDS format)
-- Processing_codes : This folder contains the processed R codes
+- Processing_codes : This folder contains the R codes for scRNA analysis
 
 # Installation
 - requirements(Program)
