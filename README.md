@@ -1,8 +1,9 @@
 # Single-Cell Analysis of Postnatal Human Cerebrovasculature Reveals the Potential Neurotoxicity of CD19-Directed CAR-T Therapy
-# 20.440_BiologicalNetwork Termproject, 2023.05.14
+20.440_BiologicalNetwork Termproject, 2023.05.14
 
-Jisoo Kim, Department of Chemcial Engineering
-MIT & Jinyeop Song, Deparment of Physics, MIT
+Authors
+Jisoo Kim, Department of Chemcial Engineering, MIT
+Jinyeop Song, Deparment of Physics, MIT
 
 # Abstract
 CAR-T cell therapy targeting CD19 has shown great potential in treating cancer, but it often leads to neurotoxicity. Recent studies have revealed that a small fraction of non-B cells in the human brain expresses CD19, but these analyses were limited to prenatal samples, and adult brain analysis only involved bulk RNA-seq data. To address this gap, we examined the CD19 expression profile of the adult human cerebrovasculature using a dataset of single-cell characterization. Our analysis identified CD19-expressing cell populations in endothelial cells, mural cells, and perivascular fibroblasts. Furthermore, differential gene expression analysis between CD19-positive and negative cells identified significant gene sets with high fold-change in different cell types. CD19 expression levels were variable among individuals but consistent across age and gender
