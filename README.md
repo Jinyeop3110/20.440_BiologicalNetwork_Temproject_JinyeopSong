@@ -46,16 +46,20 @@ You can simply generate figure by running the following.
 ```
 1_CellTypeClustering.ipynb
 ```
-This code generate CellTypeClustering 
-<img src="/ForReadMe/Picture1.png" alt="Alt text" title="Optional title">
+This code generate human blood-brain barrier cell single-nucleus RNA profiling of 4,992 profiled nuclei.
+<img src="/ForReadMe/Picture1.png" alt="Alt text" title="Identification of CD19-expressing cell populations in adult human cerebrovasculature">
 
 
 ```
 2_CD19ExpressionCounts.ipynb
 ```
+This code generate CD19 expression profiles of patients and examine potential differences based on gender and age
+<img src="/ForReadMe/Picture2.png" alt="Alt text" title=" CD19-expression profiles by patients and identifying differences by genders and age.">
 
 ```
 3_DifferentialExpression.ipynb
 ```
+This code generate cell-type specific differential gene expression analysis between CD-19 positive and negative cells
+<img src="/ForReadMe/Picture3.png" alt="Alt text" title="Differential gene expression between CD-19 positive and negative cells unveils set of genes that are potentially correlated with of CD19 expression">
 
 
