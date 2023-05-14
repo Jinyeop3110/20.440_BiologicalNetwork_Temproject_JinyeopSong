@@ -1,25 +1,21 @@
 # 20.440_BiologicalNetwork
-## Identifying a pre-clinical model for predicting neurotoxic side-effects of CD19-directed CAR-T cell therapy
+## Single-Cell Analysis of Postnatal Human Cerebrovasculature Reveals the Potential Neurotoxicity of CD19-Directed CAR-T Therapy
 
 # Motivation of the project
-Chimeric antigen receptor (CAR)-T cell therapy has shown exceptional clinical outcomes, making it a groundbreaking treatment alternative for cancer. CAR-T cell therapy employs artificially engineered receptors to specifically recognize and eradicate tumor cells by targeting their surface antigens. One of the primary hurdles, however, is the risk of on-target, off-tumor toxicity (OTOT) associated with CAR-T cell therapy. This occurs when CAR-T cells erroneously attack healthy tissues expressing the same antigen as the tumor cells, leading to potentially severe complications. Here, we propose three distinct potential projects that utilize single-cell transcriptomics data to forecast the occurrence of off-tumor toxicity in CAR-T immunotherapies.
-
+CAR-T cell therapy targeting CD19 has shown great potential in treating cancer, but it often leads to neurotoxicity. Recent studies have revealed that a small fraction of non-B cells in the human brain expresses CD19, but these analyses were limited to prenatal samples, and adult brain analysis only involved bulk RNA-seq data. To address this gap, we examined the CD19 expression profile of the adult human cerebrovasculature using a dataset of single-cell characterization. Our analysis identified CD19-expressing cell populations in endothelial cells, mural cells, and perivascular fibroblasts. Furthermore, differential gene expression analysis between CD19-positive and negative cells identified significant gene sets with high fold-change in different cell types. CD19 expression levels were variable among individuals but consistent across age and gender
 
 # Overview
 This repo is to visualize mouse brain transcriptome data by generating various plots, including FeatureScatter, Heatmap, LabelPoint, PCA_cluster, and VlnPlot. 
 
 # Data
-The data(GSE222510) is the mouse brain scRNA by shifting aging signatures in multiple cell types. 
+The Data_BBB folder contains count matrices for human cerebrovasculature have been downloaded at http://compbio.mit.edu/scBBB/. An interactive website(https://nsun.shinyapps.io/scbbb/) is used for the initial characterization.
 
-Total of 56 mouse brains with raw and processed data for 158,767 cells and filtered data for 50 mouse brains and 105,329 cells.
-
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE222510
-
-Since the original data is heavy(5.4Gb), we saved an processed data by reducing number of features and number of cells. It is saved as "processed_data/test_seurat.rds"
+Since the original data is heavy(5.4Gb), we saved an processed data by reducing number of features and number of cells. It is saved as "Data_BBB/brain.BBB.human.vascular.final.rds" and "Data_BBB/brain.BBB.human.vascular.final.Jan2022.metadata.rds"
 
 # Folder structure
-- figure : This folder contains generated figure. 
-- processed_data : This folder contains the processed data files(RDS format)
+- Figures : This folder contains generated figure. 
+- Data_BBB : This folder contains the processed data files(RDS format)
+- Processing_codes : This folder contains the processed R codes
 
 # Installation
 - requirements(Program)
@@ -27,17 +23,39 @@ Rstudio(4.2.1)
 
 - requirements(R libraries)
 ```
+library(scales)
+library(plyr)
 library(Seurat)
-library(tidyverse)
-library(here)
+library(dplyr)
+library(patchwork)
+library(ggplot2)
+library(cowplot)
+library("viridis")  
+library(RColorBrewer)
+library("viridis")
+library(Matrix)
+library(readxl)
+library(caTools)
+library(randomForest)
+library("ggpubr")
 ```
 
 # Running
 You can simply generate figure by running the following.
 
 ```
-Rscript PlotSimple.R 
+1_CellTypeClustering.ipynb
+```
+This code generate CellTypeClustering 
+<img src="/ForReadMe/Picture1.png" alt="Alt text" title="Optional title">
+
+
+```
+2_CD19ExpressionCounts.ipynb
 ```
 
+```
+3_DifferentialExpression.ipynb
+```
 
 
